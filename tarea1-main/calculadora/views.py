@@ -301,7 +301,7 @@ def grafica(request):
     titulo = "Grafica Column"
     titulo_formato = dumps(titulo)    
 
-    url = "http://127.0.0.1:8000/datosgrafica"   
+    url = "http://172.174.168.150:8080/datosgrafica"   
     header = {"Content-Type":"application/json"}
     resultados = requests.get(url,headers=header)
     resultados = resultados.json()
